@@ -8,5 +8,17 @@ def px(x, y, rgba="ffffffff"):
     data = "PX {} {} {}\n".format(x, y, rgba).encode('ascii')
     sock.send(data)
 
-px(23, 42)
+for i in range(42,100) :
+	px(23, i)
+	i = i+1
 
+for i in range(23,100) :
+	px(i, 42)
+	i = i+1
+
+for i in range(42,100) :
+	px(100,i)
+	i = i+1
+for i in range(23,100) :
+	px(i,100)
+	i = i+1
