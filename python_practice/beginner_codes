@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+#even or odd
+def even_or_odd(n):
+    n= int(input("enter a number: "))
+    if n%2==0:
+        print("even")
+        return
+    print("odd")
